@@ -1,7 +1,7 @@
 /****************************************************************************************************
  * \file:       main.c
  * \brief:      Plantilla de 5to para AED 
- * \author:     Nicolás Ferragamo ferragamo.nico@gmail.com
+ * \author:     Nicolás Ferragamo ferragamo.nico@est.frbautn.edu.ar
  * \date:       21 de abril de 2019
  * \version:    1.0
  ****************************************************************************************************/

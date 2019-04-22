@@ -579,122 +579,122 @@ Version 4.0 HI-TECH Software Intermediate Code
 "58
 [; ;./lemos.h: 58: unsigned int led_tout;
 [v _led_tout `ui ~T0 @X0 1 e ]
-"12 lemos.c
-[; ;lemos.c: 12: void leds(unsigned int velocidad){
+"56 lemos.c
+[; ;lemos.c: 56: void leds(unsigned int velocidad){
 [v _leds `(v ~T0 @X0 1 ef1`ui ]
 {
 [e :U _leds ]
 [v _velocidad `ui ~T0 @X0 1 r1 ]
 [f ]
-"13
-[; ;lemos.c: 13:     static unsigned char i=1;
+"57
+[; ;lemos.c: 57:     static unsigned char i=1;
 [v F3178 `uc ~T0 @X0 1 s i ]
 [i F3178
 -> -> 1 `i `uc
 ]
-"16
-[; ;lemos.c: 16:     switch(i){
+"60
+[; ;lemos.c: 60:     switch(i){
 [e $U 369  ]
 {
-"17
-[; ;lemos.c: 17:         case 1:if(!led_tout){
+"61
+[; ;lemos.c: 61:         case 1:if(!led_tout){
 [e :U 370 ]
 [e $ ! ! != _led_tout -> -> 0 `i `ui 371  ]
 {
-"18
-[; ;lemos.c: 18:             LATDbits.LD2=~LATDbits.LD2;
+"62
+[; ;lemos.c: 62:             LATDbits.LD2=~LATDbits.LD2;
 [e = . . _LATDbits 1 2 -> ~ -> . . _LATDbits 1 2 `i `uc ]
-"19
-[; ;lemos.c: 19:             led_tout = velocidad;
+"63
+[; ;lemos.c: 63:             led_tout = velocidad;
 [e = _led_tout _velocidad ]
-"20
-[; ;lemos.c: 20:             i++;
+"64
+[; ;lemos.c: 64:             i++;
 [e ++ F3178 -> -> 1 `i `uc ]
-"21
-[; ;lemos.c: 21:         }
+"65
+[; ;lemos.c: 65:         }
 }
 [e :U 371 ]
-"22
-[; ;lemos.c: 22:         break;
+"66
+[; ;lemos.c: 66:         break;
 [e $U 368  ]
-"23
-[; ;lemos.c: 23:         case 2:if(!led_tout){
+"67
+[; ;lemos.c: 67:         case 2:if(!led_tout){
 [e :U 372 ]
 [e $ ! ! != _led_tout -> -> 0 `i `ui 373  ]
 {
-"24
-[; ;lemos.c: 24:             LATDbits.LD3=~LATDbits.LD3;
+"68
+[; ;lemos.c: 68:             LATDbits.LD3=~LATDbits.LD3;
 [e = . . _LATDbits 1 3 -> ~ -> . . _LATDbits 1 3 `i `uc ]
-"25
-[; ;lemos.c: 25:             led_tout = velocidad;
+"69
+[; ;lemos.c: 69:             led_tout = velocidad;
 [e = _led_tout _velocidad ]
-"26
-[; ;lemos.c: 26:             i++;
+"70
+[; ;lemos.c: 70:             i++;
 [e ++ F3178 -> -> 1 `i `uc ]
-"27
-[; ;lemos.c: 27:         }
+"71
+[; ;lemos.c: 71:         }
 }
 [e :U 373 ]
-"28
-[; ;lemos.c: 28:         break;
+"72
+[; ;lemos.c: 72:         break;
 [e $U 368  ]
-"29
-[; ;lemos.c: 29:         case 3:if(!led_tout){
+"73
+[; ;lemos.c: 73:         case 3:if(!led_tout){
 [e :U 374 ]
 [e $ ! ! != _led_tout -> -> 0 `i `ui 375  ]
 {
-"30
-[; ;lemos.c: 30:             LATCbits.LC6=~LATCbits.LC6;
+"74
+[; ;lemos.c: 74:             LATCbits.LC6=~LATCbits.LC6;
 [e = . . _LATCbits 1 4 -> ~ -> . . _LATCbits 1 4 `i `uc ]
-"31
-[; ;lemos.c: 31:             led_tout = velocidad;
+"75
+[; ;lemos.c: 75:             led_tout = velocidad;
 [e = _led_tout _velocidad ]
-"32
-[; ;lemos.c: 32:             i++;
+"76
+[; ;lemos.c: 76:             i++;
 [e ++ F3178 -> -> 1 `i `uc ]
-"33
-[; ;lemos.c: 33:         }
+"77
+[; ;lemos.c: 77:         }
 }
 [e :U 375 ]
-"34
-[; ;lemos.c: 34:         break;
+"78
+[; ;lemos.c: 78:         break;
 [e $U 368  ]
-"35
-[; ;lemos.c: 35:         case 4:if(!led_tout){
+"79
+[; ;lemos.c: 79:         case 4:if(!led_tout){
 [e :U 376 ]
 [e $ ! ! != _led_tout -> -> 0 `i `ui 377  ]
 {
-"36
-[; ;lemos.c: 36:             LATCbits.LC7=~LATCbits.LC7;
+"80
+[; ;lemos.c: 80:             LATCbits.LC7=~LATCbits.LC7;
 [e = . . _LATCbits 1 5 -> ~ -> . . _LATCbits 1 5 `i `uc ]
-"37
-[; ;lemos.c: 37:             led_tout = velocidad;
+"81
+[; ;lemos.c: 81:             led_tout = velocidad;
 [e = _led_tout _velocidad ]
-"38
-[; ;lemos.c: 38:             i=1;
+"82
+[; ;lemos.c: 82:             i=1;
 [e = F3178 -> -> 1 `i `uc ]
-"39
-[; ;lemos.c: 39:         }
+"83
+[; ;lemos.c: 83:         }
 }
 [e :U 377 ]
-"40
-[; ;lemos.c: 40:         break;
+"84
+[; ;lemos.c: 84:         break;
 [e $U 368  ]
-"41
-[; ;lemos.c: 41:         default : {
+"85
+[; ;lemos.c: 85:         default : {
 [e :U 378 ]
 {
-"42
-[; ;lemos.c: 42:             led_tout = 1000;
+"86
+[; ;lemos.c: 86:             led_tout = 1000;
 [e = _led_tout -> -> 1000 `i `ui ]
-"43
-[; ;lemos.c: 43:             i=1;
+"87
+[; ;lemos.c: 87:             i=1;
 [e = F3178 -> -> 1 `i `uc ]
-"44
-[; ;lemos.c: 44:         }
+"88
+[; ;lemos.c: 88:         }
 }
-"45
-[; ;lemos.c: 45:     }
+"89
+[; ;lemos.c: 89:     }
 }
 [e $U 368  ]
 [e :U 369 ]
@@ -704,94 +704,94 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 4 `i 376
  378 ]
 [e :U 368 ]
-"46
-[; ;lemos.c: 46: }
+"90
+[; ;lemos.c: 90: }
 [e :UE 367 ]
 }
-"47
-[; ;lemos.c: 47: void Send_Disp(unsigned char NroDisp,unsigned char Dato){
+"91
+[; ;lemos.c: 91: void Send_Disp(unsigned char NroDisp,unsigned char Dato){
 [v _Send_Disp `(v ~T0 @X0 1 ef2`uc`uc ]
 {
 [e :U _Send_Disp ]
 [v _NroDisp `uc ~T0 @X0 1 r1 ]
 [v _Dato `uc ~T0 @X0 1 r2 ]
 [f ]
-"49
-[; ;lemos.c: 49:     LATA = 0;
+"93
+[; ;lemos.c: 93:     LATA = 0;
 [e = _LATA -> -> 0 `i `uc ]
-"51
-[; ;lemos.c: 51:     LATAbits.LA4 = 0;
+"95
+[; ;lemos.c: 95:     LATAbits.LA4 = 0;
 [e = . . _LATAbits 1 4 -> -> 0 `i `uc ]
-"52
-[; ;lemos.c: 52:     LATAbits.LA5 = 0;
+"96
+[; ;lemos.c: 96:     LATAbits.LA5 = 0;
 [e = . . _LATAbits 1 5 -> -> 0 `i `uc ]
-"53
-[; ;lemos.c: 53:     LATEbits.LATE0 = 0;
+"97
+[; ;lemos.c: 97:     LATEbits.LATE0 = 0;
 [e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-"54
-[; ;lemos.c: 54:     LATEbits.LATE1 = 0;
+"98
+[; ;lemos.c: 98:     LATEbits.LATE1 = 0;
 [e = . . _LATEbits 0 1 -> -> 0 `i `uc ]
-"56
-[; ;lemos.c: 56:     switch(NroDisp){
+"100
+[; ;lemos.c: 100:     switch(NroDisp){
 [e $U 381  ]
 {
-"57
-[; ;lemos.c: 57:         case 1:{
+"101
+[; ;lemos.c: 101:         case 1:{
 [e :U 382 ]
 {
-"58
-[; ;lemos.c: 58:             LATAbits.LA4 = 1;
+"102
+[; ;lemos.c: 102:             LATAbits.LA4 = 1;
 [e = . . _LATAbits 1 4 -> -> 1 `i `uc ]
-"59
-[; ;lemos.c: 59:         }break;
+"103
+[; ;lemos.c: 103:         }break;
 }
 [e $U 380  ]
-"60
-[; ;lemos.c: 60:         case 2: {
+"104
+[; ;lemos.c: 104:         case 2: {
 [e :U 383 ]
 {
-"61
-[; ;lemos.c: 61:             LATAbits.LA5 = 1;
+"105
+[; ;lemos.c: 105:             LATAbits.LA5 = 1;
 [e = . . _LATAbits 1 5 -> -> 1 `i `uc ]
-"62
-[; ;lemos.c: 62:         }break;
+"106
+[; ;lemos.c: 106:         }break;
 }
 [e $U 380  ]
-"63
-[; ;lemos.c: 63:         case 3: {
+"107
+[; ;lemos.c: 107:         case 3: {
 [e :U 384 ]
 {
-"64
-[; ;lemos.c: 64:             LATEbits.LATE0 = 1;
+"108
+[; ;lemos.c: 108:             LATEbits.LATE0 = 1;
 [e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
-"65
-[; ;lemos.c: 65:         }break;
+"109
+[; ;lemos.c: 109:         }break;
 }
 [e $U 380  ]
-"66
-[; ;lemos.c: 66:         case 4: {
+"110
+[; ;lemos.c: 110:         case 4: {
 [e :U 385 ]
 {
-"67
-[; ;lemos.c: 67:             LATEbits.LATE1 = 1;
+"111
+[; ;lemos.c: 111:             LATEbits.LATE1 = 1;
 [e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-"68
-[; ;lemos.c: 68:         }break;
+"112
+[; ;lemos.c: 112:         }break;
 }
 [e $U 380  ]
-"69
-[; ;lemos.c: 69:         default :{
+"113
+[; ;lemos.c: 113:         default :{
 [e :U 386 ]
 {
-"70
-[; ;lemos.c: 70:             LATAbits.LA4 = 1;
+"114
+[; ;lemos.c: 114:             LATAbits.LA4 = 1;
 [e = . . _LATAbits 1 4 -> -> 1 `i `uc ]
-"71
-[; ;lemos.c: 71:         }break;
+"115
+[; ;lemos.c: 115:         }break;
 }
 [e $U 380  ]
-"72
-[; ;lemos.c: 72:     }
+"116
+[; ;lemos.c: 116:     }
 }
 [e $U 380  ]
 [e :U 381 ]
@@ -801,21 +801,21 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 4 `i 385
  386 ]
 [e :U 380 ]
-"73
-[; ;lemos.c: 73:     Dato = Dato & 0x0F;
+"117
+[; ;lemos.c: 117:     Dato = Dato & 0x0F;
 [e = _Dato -> & -> _Dato `i -> 15 `i `uc ]
-"74
-[; ;lemos.c: 74:     LATA = LATA & 0xF0;
+"118
+[; ;lemos.c: 118:     LATA = LATA & 0xF0;
 [e = _LATA -> & -> _LATA `i -> 240 `i `uc ]
-"75
-[; ;lemos.c: 75:     LATA = LATA | Dato;
+"119
+[; ;lemos.c: 119:     LATA = LATA | Dato;
 [e = _LATA -> | -> _LATA `i -> _Dato `i `uc ]
-"76
-[; ;lemos.c: 76: }
+"120
+[; ;lemos.c: 120: }
 [e :UE 379 ]
 }
-"78
-[; ;lemos.c: 78: void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni){
+"122
+[; ;lemos.c: 122: void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni){
 [v _Send_4Disp `(v ~T0 @X0 1 ef4`uc`uc`uc`uc ]
 {
 [e :U _Send_4Disp ]
@@ -824,139 +824,139 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _Dec `uc ~T0 @X0 1 r3 ]
 [v _Uni `uc ~T0 @X0 1 r4 ]
 [f ]
-"80
-[; ;lemos.c: 80:     static unsigned char Nro_Disp=1;
+"124
+[; ;lemos.c: 124:     static unsigned char Nro_Disp=1;
 [v F3187 `uc ~T0 @X0 1 s Nro_Disp ]
 [i F3187
 -> -> 1 `i `uc
 ]
-"82
-[; ;lemos.c: 82:     switch(Nro_Disp){
+"126
+[; ;lemos.c: 126:     switch(Nro_Disp){
 [e $U 389  ]
 {
-"83
-[; ;lemos.c: 83:         case 1:{
+"127
+[; ;lemos.c: 127:         case 1:{
 [e :U 390 ]
 {
-"84
-[; ;lemos.c: 84:             if(!mux_tout){
+"128
+[; ;lemos.c: 128:             if(!mux_tout){
 [e $ ! ! != -> _mux_tout `i -> 0 `i 391  ]
 {
-"85
-[; ;lemos.c: 85:                 Send_Disp(1,Umil);
+"129
+[; ;lemos.c: 129:                 Send_Disp(1,Umil);
 [e ( _Send_Disp (2 , -> -> 1 `i `uc _Umil ]
-"86
-[; ;lemos.c: 86:                 mux_tout = 4;;
+"130
+[; ;lemos.c: 130:                 mux_tout = 4;;
 [e = _mux_tout -> -> 4 `i `uc ]
-"87
-[; ;lemos.c: 87:                 Nro_Disp = 2;
+"131
+[; ;lemos.c: 131:                 Nro_Disp = 2;
 [e = F3187 -> -> 2 `i `uc ]
-"88
-[; ;lemos.c: 88:             }
+"132
+[; ;lemos.c: 132:             }
 }
 [e :U 391 ]
-"89
-[; ;lemos.c: 89:         }
+"133
+[; ;lemos.c: 133:         }
 }
-"90
-[; ;lemos.c: 90:         break;
+"134
+[; ;lemos.c: 134:         break;
 [e $U 388  ]
-"91
-[; ;lemos.c: 91:         case 2:{
+"135
+[; ;lemos.c: 135:         case 2:{
 [e :U 392 ]
 {
-"92
-[; ;lemos.c: 92:             if(!mux_tout){
+"136
+[; ;lemos.c: 136:             if(!mux_tout){
 [e $ ! ! != -> _mux_tout `i -> 0 `i 393  ]
 {
-"93
-[; ;lemos.c: 93:                 Send_Disp(2,Cent);
+"137
+[; ;lemos.c: 137:                 Send_Disp(2,Cent);
 [e ( _Send_Disp (2 , -> -> 2 `i `uc _Cent ]
-"94
-[; ;lemos.c: 94:                 mux_tout = 4;;
+"138
+[; ;lemos.c: 138:                 mux_tout = 4;;
 [e = _mux_tout -> -> 4 `i `uc ]
-"95
-[; ;lemos.c: 95:                 Nro_Disp = 3;
+"139
+[; ;lemos.c: 139:                 Nro_Disp = 3;
 [e = F3187 -> -> 3 `i `uc ]
-"96
-[; ;lemos.c: 96:             }
+"140
+[; ;lemos.c: 140:             }
 }
 [e :U 393 ]
-"97
-[; ;lemos.c: 97:         }
+"141
+[; ;lemos.c: 141:         }
 }
-"98
-[; ;lemos.c: 98:         break;
+"142
+[; ;lemos.c: 142:         break;
 [e $U 388  ]
-"99
-[; ;lemos.c: 99:         case 3:{
+"143
+[; ;lemos.c: 143:         case 3:{
 [e :U 394 ]
 {
-"100
-[; ;lemos.c: 100:             if(!mux_tout){
+"144
+[; ;lemos.c: 144:             if(!mux_tout){
 [e $ ! ! != -> _mux_tout `i -> 0 `i 395  ]
 {
-"101
-[; ;lemos.c: 101:                 Send_Disp(3,Dec);
+"145
+[; ;lemos.c: 145:                 Send_Disp(3,Dec);
 [e ( _Send_Disp (2 , -> -> 3 `i `uc _Dec ]
-"102
-[; ;lemos.c: 102:                 mux_tout = 4;;
+"146
+[; ;lemos.c: 146:                 mux_tout = 4;;
 [e = _mux_tout -> -> 4 `i `uc ]
-"103
-[; ;lemos.c: 103:                 Nro_Disp = 4;
+"147
+[; ;lemos.c: 147:                 Nro_Disp = 4;
 [e = F3187 -> -> 4 `i `uc ]
-"104
-[; ;lemos.c: 104:             }
+"148
+[; ;lemos.c: 148:             }
 }
 [e :U 395 ]
-"105
-[; ;lemos.c: 105:         }
+"149
+[; ;lemos.c: 149:         }
 }
-"106
-[; ;lemos.c: 106:         break;
+"150
+[; ;lemos.c: 150:         break;
 [e $U 388  ]
-"107
-[; ;lemos.c: 107:         case 4:{
+"151
+[; ;lemos.c: 151:         case 4:{
 [e :U 396 ]
 {
-"108
-[; ;lemos.c: 108:             if(!mux_tout){
+"152
+[; ;lemos.c: 152:             if(!mux_tout){
 [e $ ! ! != -> _mux_tout `i -> 0 `i 397  ]
 {
-"109
-[; ;lemos.c: 109:                 Send_Disp(4,Uni);
+"153
+[; ;lemos.c: 153:                 Send_Disp(4,Uni);
 [e ( _Send_Disp (2 , -> -> 4 `i `uc _Uni ]
-"110
-[; ;lemos.c: 110:                 mux_tout = 4;;
+"154
+[; ;lemos.c: 154:                 mux_tout = 4;;
 [e = _mux_tout -> -> 4 `i `uc ]
-"111
-[; ;lemos.c: 111:                 Nro_Disp = 1;
+"155
+[; ;lemos.c: 155:                 Nro_Disp = 1;
 [e = F3187 -> -> 1 `i `uc ]
-"112
-[; ;lemos.c: 112:             }
+"156
+[; ;lemos.c: 156:             }
 }
 [e :U 397 ]
-"113
-[; ;lemos.c: 113:         }
+"157
+[; ;lemos.c: 157:         }
 }
-"114
-[; ;lemos.c: 114:         break;
+"158
+[; ;lemos.c: 158:         break;
 [e $U 388  ]
-"115
-[; ;lemos.c: 115:         default :{
+"159
+[; ;lemos.c: 159:         default :{
 [e :U 398 ]
 {
-"116
-[; ;lemos.c: 116:             mux_tout = 4;;
+"160
+[; ;lemos.c: 160:             mux_tout = 4;;
 [e = _mux_tout -> -> 4 `i `uc ]
-"117
-[; ;lemos.c: 117:             Nro_Disp = 1;
+"161
+[; ;lemos.c: 161:             Nro_Disp = 1;
 [e = F3187 -> -> 1 `i `uc ]
-"118
-[; ;lemos.c: 118:         }
+"162
+[; ;lemos.c: 162:         }
 }
-"119
-[; ;lemos.c: 119:     }
+"163
+[; ;lemos.c: 163:     }
 }
 [e $U 388  ]
 [e :U 389 ]
@@ -966,32 +966,32 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 4 `i 396
  398 ]
 [e :U 388 ]
-"120
-[; ;lemos.c: 120: }
+"164
+[; ;lemos.c: 164: }
 [e :UE 387 ]
 }
-"121
-[; ;lemos.c: 121: void tic_timer0(void){
+"165
+[; ;lemos.c: 165: void tic_timer0(void){
 [v _tic_timer0 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tic_timer0 ]
 [f ]
-"122
-[; ;lemos.c: 122:     if(mux_tout)mux_tout--;
+"166
+[; ;lemos.c: 166:     if(mux_tout)mux_tout--;
 [e $ ! != -> _mux_tout `i -> 0 `i 400  ]
 [e -- _mux_tout -> -> 1 `i `uc ]
 [e :U 400 ]
-"123
-[; ;lemos.c: 123:     if(bot_tout)bot_tout--;
+"167
+[; ;lemos.c: 167:     if(bot_tout)bot_tout--;
 [e $ ! != -> _bot_tout `i -> 0 `i 401  ]
 [e -- _bot_tout -> -> 1 `i `uc ]
 [e :U 401 ]
-"124
-[; ;lemos.c: 124:     if(led_tout)led_tout--;
+"168
+[; ;lemos.c: 168:     if(led_tout)led_tout--;
 [e $ ! != _led_tout -> -> 0 `i `ui 402  ]
 [e -- _led_tout -> -> 1 `i `ui ]
 [e :U 402 ]
-"125
-[; ;lemos.c: 125: }
+"169
+[; ;lemos.c: 169: }
 [e :UE 399 ]
 }

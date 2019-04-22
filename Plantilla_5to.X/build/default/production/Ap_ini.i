@@ -7,6 +7,7 @@
 # 1 "/opt/microchip/xc8/v2.05/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "Ap_ini.c" 2
+# 13 "Ap_ini.c"
 # 1 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 1 3
 # 18 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -5623,18 +5624,13 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 2 3
-# 2 "Ap_ini.c" 2
+# 14 "Ap_ini.c" 2
 # 1 "./Ap_ini.h" 1
 # 40 "./Ap_ini.h"
 void pic_ini13(void);
 void timer_ini13(void);
-# 3 "Ap_ini.c" 2
-
-
-
-
-
-
+# 15 "Ap_ini.c" 2
+# 52 "Ap_ini.c"
 void pic_ini13(void){
 
 
