@@ -20,7 +20,7 @@ temp COMRAM 1 7 7 1 1
 intcode CODE 0 2008 2008 6 1
 dataCOMRAM COMRAM 1 5 5 2 1
 bssCOMRAM COMRAM 1 1 1 4 1
-$/tmp/xcXyAAwk0.o
+$/tmp/xcXEMq0S7.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 200E 200E 4 1
 reset_vec CODE 0 2000 2000 4 1
@@ -68,38 +68,38 @@ MEDIUMCONST 2018-7FC7 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/Plantilla_5to.X.production.o
-2008 intcode CODE >55:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
-2008 intcode CODE >57:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
-7FC8 intcode_body CODE >57:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
-7FCA intcode_body CODE >62:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
-7FCC intcode_body CODE >63:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
-7FCE intcode_body CODE >66:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
-2012 text0 CODE >48:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
-2012 text0 CODE >54:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
-7FD2 cinit CODE >1252:/tmp/xcX3yFuZb
-7FD2 cinit CODE >1254:/tmp/xcX3yFuZb
-7FD2 cinit CODE >1257:/tmp/xcX3yFuZb
-7FD2 cinit CODE >1288:/tmp/xcX3yFuZb
-7FD4 cinit CODE >1289:/tmp/xcX3yFuZb
-7FD6 cinit CODE >1290:/tmp/xcX3yFuZb
-7FD8 cinit CODE >1291:/tmp/xcX3yFuZb
-7FDA cinit CODE >1292:/tmp/xcX3yFuZb
-7FDC cinit CODE >1293:/tmp/xcX3yFuZb
-7FDE cinit CODE >1294:/tmp/xcX3yFuZb
-7FE0 cinit CODE >1295:/tmp/xcX3yFuZb
-7FE4 cinit CODE >1296:/tmp/xcX3yFuZb
-7FE6 cinit CODE >1297:/tmp/xcX3yFuZb
-7FEA cinit CODE >1301:/tmp/xcX3yFuZb
-7FEC cinit CODE >1302:/tmp/xcX3yFuZb
-7FEE cinit CODE >1303:/tmp/xcX3yFuZb
-7FF0 cinit CODE >1304:/tmp/xcX3yFuZb
-7FF2 cinit CODE >1310:/tmp/xcX3yFuZb
-7FF2 cinit CODE >1312:/tmp/xcX3yFuZb
-7FF4 cinit CODE >1313:/tmp/xcX3yFuZb
-7FF6 cinit CODE >1315:/tmp/xcX3yFuZb
-7FF8 cinit CODE >1316:/tmp/xcX3yFuZb
-7FFA cinit CODE >1317:/tmp/xcX3yFuZb
-7FFC cinit CODE >1318:/tmp/xcX3yFuZb
+2008 intcode CODE >65:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
+2008 intcode CODE >67:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
+7FC8 intcode_body CODE >67:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
+7FCA intcode_body CODE >72:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
+7FCC intcode_body CODE >73:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
+7FCE intcode_body CODE >76:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
+2012 text0 CODE >58:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
+2012 text0 CODE >64:/home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
+7FD2 cinit CODE >1252:/tmp/xcXPfFtsS
+7FD2 cinit CODE >1254:/tmp/xcXPfFtsS
+7FD2 cinit CODE >1257:/tmp/xcXPfFtsS
+7FD2 cinit CODE >1288:/tmp/xcXPfFtsS
+7FD4 cinit CODE >1289:/tmp/xcXPfFtsS
+7FD6 cinit CODE >1290:/tmp/xcXPfFtsS
+7FD8 cinit CODE >1291:/tmp/xcXPfFtsS
+7FDA cinit CODE >1292:/tmp/xcXPfFtsS
+7FDC cinit CODE >1293:/tmp/xcXPfFtsS
+7FDE cinit CODE >1294:/tmp/xcXPfFtsS
+7FE0 cinit CODE >1295:/tmp/xcXPfFtsS
+7FE4 cinit CODE >1296:/tmp/xcXPfFtsS
+7FE6 cinit CODE >1297:/tmp/xcXPfFtsS
+7FEA cinit CODE >1301:/tmp/xcXPfFtsS
+7FEC cinit CODE >1302:/tmp/xcXPfFtsS
+7FEE cinit CODE >1303:/tmp/xcXPfFtsS
+7FF0 cinit CODE >1304:/tmp/xcXPfFtsS
+7FF2 cinit CODE >1310:/tmp/xcXPfFtsS
+7FF2 cinit CODE >1312:/tmp/xcXPfFtsS
+7FF4 cinit CODE >1313:/tmp/xcXPfFtsS
+7FF6 cinit CODE >1315:/tmp/xcXPfFtsS
+7FF8 cinit CODE >1316:/tmp/xcXPfFtsS
+7FFA cinit CODE >1317:/tmp/xcXPfFtsS
+7FFC cinit CODE >1318:/tmp/xcXPfFtsS
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -118,7 +118,7 @@ __Hspace_1 8 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production/Plantilla_5to.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXyAAwk0.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXEMq0S7.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Plantilla_5to.X.production.o
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 leds@i 6 0 COMRAM 1 dataCOMRAM dist/default/production/Plantilla_5to.X.production.o
@@ -129,10 +129,10 @@ _LATB F8A 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 _LATC F8B 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 _LATD F8C 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 _LATE F8D 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcXyAAwk0.o
+___sp 0 0 STACK 2 stack /tmp/xcXEMq0S7.o
 _main 2012 0 CODE 0 text0 dist/default/production/Plantilla_5to.X.production.o
 btemp 7 0 COMRAM 1 temp dist/default/production/Plantilla_5to.X.production.o
-start 200E 0 CODE 0 init /tmp/xcXyAAwk0.o
+start 200E 0 CODE 0 init /tmp/xcXEMq0S7.o
 _mux_tout 4 0 COMRAM 1 bssCOMRAM dist/default/production/Plantilla_5to.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Plantilla_5to.X.production.o
@@ -143,11 +143,11 @@ ttemp5 8 0 COMRAM 1 temp dist/default/production/Plantilla_5to.X.production.o
 ttemp6 B 0 COMRAM 1 temp dist/default/production/Plantilla_5to.X.production.o
 ttemp7 F 0 COMRAM 1 temp dist/default/production/Plantilla_5to.X.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/Plantilla_5to.X.production.o
-__accesstop 60 0 ABS 0 - /tmp/xcXyAAwk0.o
-intlevel0 0 0 CODE 0 text /tmp/xcXyAAwk0.o
-intlevel1 0 0 CODE 0 text /tmp/xcXyAAwk0.o
-intlevel2 0 0 CODE 0 text /tmp/xcXyAAwk0.o
-intlevel3 0 0 CODE 0 text /tmp/xcXyAAwk0.o
+__accesstop 60 0 ABS 0 - /tmp/xcXEMq0S7.o
+intlevel0 0 0 CODE 0 text /tmp/xcXEMq0S7.o
+intlevel1 0 0 CODE 0 text /tmp/xcXEMq0S7.o
+intlevel2 0 0 CODE 0 text /tmp/xcXEMq0S7.o
+intlevel3 0 0 CODE 0 text /tmp/xcXEMq0S7.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Plantilla_5to.X.production.o
 __CFG_USBDIV$2 0 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Plantilla_5to.X.production.o
@@ -160,8 +160,8 @@ __Hifardata 0 0 CODE 0 ifardata dist/default/production/Plantilla_5to.X.producti
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production/Plantilla_5to.X.production.o
 __pidataCOMRAM 2004 0 CODE 0 idataCOMRAM dist/default/production/Plantilla_5to.X.production.o
 _ADCON1 FC1 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcXyAAwk0.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcXyAAwk0.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXEMq0S7.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXEMq0S7.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/Plantilla_5to.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/Plantilla_5to.X.production.o
 Send_4Disp@Nro_Disp 5 0 COMRAM 1 dataCOMRAM dist/default/production/Plantilla_5to.X.production.o
@@ -197,7 +197,7 @@ __Hstack 0 0 STACK 2 stack dist/default/production/Plantilla_5to.X.production.o
 __Htext0 0 0 ABS 0 text0 dist/default/production/Plantilla_5to.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Plantilla_5to.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production/Plantilla_5to.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcXyAAwk0.o
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcXEMq0S7.o
 __Hcomram 0 0 ABS 0 comram dist/default/production/Plantilla_5to.X.production.o
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production/Plantilla_5to.X.production.o
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
@@ -267,8 +267,8 @@ _LATDbits F8C 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 _LATEbits F8D 0 ABS 0 - dist/default/production/Plantilla_5to.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production/Plantilla_5to.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production/Plantilla_5to.X.production.o
-stackhi 7FF 0 ABS 0 - /tmp/xcXyAAwk0.o
-stacklo 60 0 ABS 0 - /tmp/xcXyAAwk0.o
+stackhi 7FF 0 ABS 0 - /tmp/xcXEMq0S7.o
+stacklo 60 0 ABS 0 - /tmp/xcXEMq0S7.o
 __Lintcode 2008 0 CODE 0 intcode dist/default/production/Plantilla_5to.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production/Plantilla_5to.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production/Plantilla_5to.X.production.o
@@ -289,7 +289,7 @@ __Lrparam 0 0 COMRAM 1 rparam dist/default/production/Plantilla_5to.X.production
 __pcinit 7FD2 0 CODE 0 cinit dist/default/production/Plantilla_5to.X.production.o
 __ptext0 2012 0 CODE 0 text0 dist/default/production/Plantilla_5to.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production/Plantilla_5to.X.production.o
-__ramtop 800 0 RAM 0 ramtop /tmp/xcXyAAwk0.o
+__ramtop 800 0 RAM 0 ramtop /tmp/xcXEMq0S7.o
 __Lpowerup 200E 0 CODE 0 powerup dist/default/production/Plantilla_5to.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Plantilla_5to.X.production.o
 __Lreset_vec 2000 0 CODE 0 reset_vec dist/default/production/Plantilla_5to.X.production.o

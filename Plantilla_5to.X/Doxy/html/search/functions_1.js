@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['leds',['leds',['../dd/d85/lemos_8c.html#ae047d905d36b056a0cefa05604fceb1d',1,'leds(unsigned int velocidad):&#160;lemos.c'],['../d4/da7/lemos_8h.html#ae047d905d36b056a0cefa05604fceb1d',1,'leds(unsigned int velocidad):&#160;lemos.c']]]
+  ['kit_5finit',['Kit_Init',['../d6/d67/FW__InitKit_8c.html#a91a9e93581be29c6af058d09741ee5be',1,'Kit_Init(void):&#160;FW_InitKit.c'],['../d5/dee/FW__InitKit_8h.html#a91a9e93581be29c6af058d09741ee5be',1,'Kit_Init(void):&#160;FW_InitKit.c']]]
 ];

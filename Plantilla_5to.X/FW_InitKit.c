@@ -1,5 +1,5 @@
 /****************************************************************************************************
- * \file:       Ap_ini.c
+ * \file:       FW_InitKit
  * \brief:      Archivo con las funciones de inicialización del PIC18F4550
  * \author:     Nicolás Ferragamo ferragamo.nico@est.frbautn.edu.ar
  * \date:       22 de abril de 2019
@@ -11,7 +11,7 @@
 ****************************************************************************************************/
 
 #include <xc.h>
-#include "Ap_ini.h"
+#include "FW_InitKit.h"
 
 /****************************************************************************************************
  *** DEFINES PRIVADOS AL MODULO
@@ -45,11 +45,18 @@
  *** FUNCIONES PRIVADAS AL MODULO
 ****************************************************************************************************/
 
-/*este código está pensado para inicializar correctamente la placa o shield
-1.3 y debe de ser utilizado con cuidado para otras placas o aplicaciones*/
+/****************************************************************************************************
+ *** FUNCIONES GLOBALES AL MODULO
+****************************************************************************************************/
 
-
-void pic_ini13(void){
+/**
+	\fn  void Kit_Init(void)
+	\brief Inicializa el entrenador
+ 	\author Esteban Lemos
+ 	\date  
+	\return void
+*/
+void Kit_Init(void){
 
     //Borrado de todos los puertos
     LATA = 0x00;
@@ -77,6 +84,15 @@ void pic_ini13(void){
                         //el alumno según el mismo necesite
 }
 
+/**
+	\fn  
+	\brief Descripcion
+ 	\author Ing. Marcelo Trujillo
+ 	\date ${date}
+ 	\param [in] parametros de entrada
+ 	\param [out] parametros de salida
+	\return tipo y descripcion de retorno
+*/
 void timer_ini13(){
     T0CONbits.TMR0ON = 0;   //apago el timer
     T0CONbits.T08BIT = 1;   //selecciono el timer en 8 bits

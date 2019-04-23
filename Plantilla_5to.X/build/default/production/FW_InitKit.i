@@ -1,4 +1,4 @@
-# 1 "Robello.c"
+# 1 "FW_InitKit.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "/opt/microchip/xc8/v2.05/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "Robello.c" 2
+# 1 "FW_InitKit.c" 2
+# 13 "FW_InitKit.c"
 # 1 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 1 3
 # 18 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -5623,60 +5624,56 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 2 3
-# 2 "Robello.c" 2
-# 1 "./Robello.h" 1
-# 15 "./Robello.h"
-void mux_display(void);
+# 14 "FW_InitKit.c" 2
+# 1 "./FW_InitKit.h" 1
+# 83 "./FW_InitKit.h"
+void Kit_Init(void);
 
-unsigned char UMIL,CENT,DEC,UNI;
-unsigned char MEMDIG = 1;
-# 3 "Robello.c" 2
-# 1 "./Ap_ini.h" 1
-# 40 "./Ap_ini.h"
-void pic_ini13(void);
+
+
+
+
+
 void timer_ini13(void);
-# 4 "Robello.c" 2
+# 15 "FW_InitKit.c" 2
+# 59 "FW_InitKit.c"
+void Kit_Init(void){
 
 
-void mux_display(void)
-{static unsigned char contdisp=0;
- unsigned char datoenv;
-if(contdisp==0)
-         {
-            LATEbits.LATE1=0;
-            LATAbits.LA4=1;
-            datoenv=UMIL;
-        }
-        if(contdisp==1)
-         {
-            LATAbits.LA4=0;
-            LATAbits.LA5=1;
-            datoenv=CENT;
-        }
-
-        if(contdisp==2)
-         {
-            LATAbits.LA5=0;
-            LATEbits.LATE0=1;
-            datoenv=DEC;
-        }
-
-
-        if(contdisp==3)
-         {
-            LATEbits.LATE0=0;
-            LATEbits.LATE1=1;
-            datoenv=UNI;
-        }
-
-        LATA = (LATA & 0xF0)|(datoenv & 0x0F);
-
-
-        contdisp++;
-
-
-        contdisp=(contdisp & 3);
+    LATA = 0x00;
+    LATB = 0x00;
+    LATC = 0x00;
+    LATD = 0x00;
+    LATE = 0x00;
 
 
 
+    TRISD = 0xF0;
+    TRISCbits.RC6 = 0;
+    TRISCbits.RC7 = 0;
+
+
+
+    CMCON = 0x07;
+    ADCON1 = 0x0F;
+    TRISA = 0xC0;
+    TRISE = 0x00;
+
+
+
+    TRISB = 0xFF;
+
+}
+# 96 "FW_InitKit.c"
+void timer_ini13(){
+    T0CONbits.TMR0ON = 0;
+    T0CONbits.T08BIT = 1;
+    T0CONbits.T0CS = 0;
+    T0CONbits.PSA = 0;
+    T0CONbits.T0PS0 = 1;
+    T0CONbits.T0PS1 = 1;
+    T0CONbits.T0PS2 = 1;
+    TMR0L = 209;
+    TMR0H = 0xFF;
+    INTCONbits.TMR0IE = 1;
 }

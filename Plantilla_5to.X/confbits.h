@@ -1,9 +1,16 @@
-/* 
- * File:   confbits.h
- * Author: Administrador
+/****************************************************************************************************
  *
- * Created on 19 de febrero de 2014, 19:01
- */
+ * \file		confbits.h
+ * \brief		Archivo de configuración del microcontrolador
+ * \details     En este archivo se configura entre otras cosas el oscilador.
+ * \date		19 de febrero de 2014, 19:01
+ * \author		Administrador
+ * \version     1.0.0
+****************************************************************************************************/
+
+/****************************************************************************************************
+ *** MODULO
+****************************************************************************************************/
 
 #ifndef CONFBITS_H
 #define	CONFBITS_H

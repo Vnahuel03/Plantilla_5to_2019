@@ -5626,7 +5626,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 2 3
 # 13 "main.c" 2
 # 1 "./confbits.h" 1
-# 21 "./confbits.h"
+# 28 "./confbits.h"
 #pragma config PLLDIV = 5
 #pragma config CPUDIV = OSC1_PLL2
 #pragma config USBDIV = 2
@@ -5672,7 +5672,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 
 #pragma config EBTRB = OFF
 # 14 "main.c" 2
-# 48 "main.c"
+# 58 "main.c"
 void main (void)
 {
 

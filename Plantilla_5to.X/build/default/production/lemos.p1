@@ -572,12 +572,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8893
 [; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"57 ./lemos.h
-[; ;./lemos.h: 57: unsigned char mux_tout,bot_tout;
+"72 ./lemos.h
+[; ;./lemos.h: 72: unsigned char mux_tout,bot_tout;
 [v _mux_tout `uc ~T0 @X0 1 e ]
 [v _bot_tout `uc ~T0 @X0 1 e ]
-"58
-[; ;./lemos.h: 58: unsigned int led_tout;
+"73
+[; ;./lemos.h: 73: unsigned int led_tout;
 [v _led_tout `ui ~T0 @X0 1 e ]
 "56 lemos.c
 [; ;lemos.c: 56: void leds(unsigned int velocidad){

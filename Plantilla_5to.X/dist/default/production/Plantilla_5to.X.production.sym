@@ -232,7 +232,7 @@ intcode_body 7FC8 7FD1 CODE 7FC8 0
 %locals
 dist/default/production/Plantilla_5to.X.production.o
 /opt/microchip/xc8/v2.05/pic/include/pic18f4550.h
-/tmp/xcX3yFuZb
+/tmp/xcXPfFtsS
 1252 7FD2 0 CODE 0
 1254 7FD2 0 CODE 0
 1257 7FD2 0 CODE 0
@@ -258,13 +258,13 @@ dist/default/production/Plantilla_5to.X.production.o
 1317 7FFA 0 CODE 0
 1318 7FFC 0 CODE 0
 main.c
-48 2012 0 CODE 0
-54 2012 0 CODE 0
+58 2012 0 CODE 0
+64 2012 0 CODE 0
 main.c
-55 2008 0 CODE 0
-57 2008 0 CODE 0
+65 2008 0 CODE 0
+67 2008 0 CODE 0
 main.c
-57 7FC8 0 CODE 0
-62 7FCA 0 CODE 0
-63 7FCC 0 CODE 0
-66 7FCE 0 CODE 0
+67 7FC8 0 CODE 0
+72 7FCA 0 CODE 0
+73 7FCC 0 CODE 0
+76 7FCE 0 CODE 0

@@ -5625,13 +5625,19 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 2 3
 # 13 "lemos.c" 2
-# 1 "./Ap_ini.h" 1
-# 40 "./Ap_ini.h"
-void pic_ini13(void);
+# 1 "./FW_InitKit.h" 1
+# 83 "./FW_InitKit.h"
+void Kit_Init(void);
+
+
+
+
+
+
 void timer_ini13(void);
 # 14 "lemos.c" 2
 # 1 "./lemos.h" 1
-# 51 "./lemos.h"
+# 66 "./lemos.h"
 void Send_Disp(unsigned char NroDisp,unsigned char Dato);
 void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
 void leds(unsigned int velocidad);
