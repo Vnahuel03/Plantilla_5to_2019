@@ -145,7 +145,7 @@
 [v _CMCON CMCON `VEuc  1 e 1 @4020 ]
 "6581
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
-[s S248 . 1 `uc 1 T0PS 1 0 :3:0 
+[s S255 . 1 `uc 1 T0PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -153,17 +153,17 @@
 `uc 1 TMR0ON 1 0 :1:7 
 ]
 "8089
-[s S255 . 1 `uc 1 T0PS0 1 0 :1:0 
+[s S262 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
 ]
-[u S259 . 1 `S248 1 . 1 0 `S255 1 . 1 0 ]
-[v _T0CONbits T0CONbits `VES259  1 e 1 @4053 ]
+[u S266 . 1 `S255 1 . 1 0 `S262 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES266  1 e 1 @4053 ]
 "8146
 [v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
 "8153
 [v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
-[s S276 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S283 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -173,7 +173,7 @@
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "8614
-[s S285 . 1 `uc 1 . 1 0 :1:0 
+[s S292 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -182,12 +182,12 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S294 . 1 `uc 1 . 1 0 :6:0 
+[s S301 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S298 . 1 `S276 1 . 1 0 `S285 1 . 1 0 `S294 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES298  1 e 1 @4082 ]
+[u S305 . 1 `S283 1 . 1 0 `S292 1 . 1 0 `S301 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES305  1 e 1 @4082 ]
 "10815
 [v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
 "58 /home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c

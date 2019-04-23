@@ -1,4 +1,4 @@
-# 1 "lemos.c"
+# 1 "FW_Timer.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "/opt/microchip/xc8/v2.05/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "lemos.c" 2
-# 12 "lemos.c"
+# 1 "FW_Timer.c" 2
+# 13 "FW_Timer.c"
+# 1 "./FW_Timer.h" 1
+# 30 "./FW_Timer.h"
 # 1 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 1 3
 # 18 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -5624,134 +5626,20 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 2 3
-# 13 "lemos.c" 2
-# 1 "./FW_InitKit.h" 1
-# 66 "./FW_InitKit.h"
-void Kit_Init(void);
-# 14 "lemos.c" 2
-# 1 "./lemos.h" 1
-# 66 "./lemos.h"
-void Send_Disp(unsigned char NroDisp,unsigned char Dato);
-void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni);
-void leds(unsigned int velocidad);
-void tic_timer0(void);
-
-
-unsigned char mux_tout,bot_tout;
-unsigned int led_tout;
-# 15 "lemos.c" 2
-# 56 "lemos.c"
-void leds(unsigned int velocidad){
-    static unsigned char i=1;
-
-
-    switch(i){
-        case 1:if(!led_tout){
-            LATDbits.LD2=~LATDbits.LD2;
-            led_tout = velocidad;
-            i++;
-        }
-        break;
-        case 2:if(!led_tout){
-            LATDbits.LD3=~LATDbits.LD3;
-            led_tout = velocidad;
-            i++;
-        }
-        break;
-        case 3:if(!led_tout){
-            LATCbits.LC6=~LATCbits.LC6;
-            led_tout = velocidad;
-            i++;
-        }
-        break;
-        case 4:if(!led_tout){
-            LATCbits.LC7=~LATCbits.LC7;
-            led_tout = velocidad;
-            i=1;
-        }
-        break;
-        default : {
-            led_tout = 1000;
-            i=1;
-        }
-    }
-}
-void Send_Disp(unsigned char NroDisp,unsigned char Dato){
-
-    LATA = 0;
-
-    LATAbits.LA4 = 0;
-    LATAbits.LA5 = 0;
-    LATEbits.LATE0 = 0;
-    LATEbits.LATE1 = 0;
-
-    switch(NroDisp){
-        case 1:{
-            LATAbits.LA4 = 1;
-        }break;
-        case 2: {
-            LATAbits.LA5 = 1;
-        }break;
-        case 3: {
-            LATEbits.LATE0 = 1;
-        }break;
-        case 4: {
-            LATEbits.LATE1 = 1;
-        }break;
-        default :{
-            LATAbits.LA4 = 1;
-        }break;
-    }
-    Dato = Dato & 0x0F;
-    LATA = LATA & 0xF0;
-    LATA = LATA | Dato;
-}
-
-void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni){
-
-    static unsigned char Nro_Disp=1;
-
-    switch(Nro_Disp){
-        case 1:{
-            if(!mux_tout){
-                Send_Disp(1,Umil);
-                mux_tout = 4;;
-                Nro_Disp = 2;
-            }
-        }
-        break;
-        case 2:{
-            if(!mux_tout){
-                Send_Disp(2,Cent);
-                mux_tout = 4;;
-                Nro_Disp = 3;
-            }
-        }
-        break;
-        case 3:{
-            if(!mux_tout){
-                Send_Disp(3,Dec);
-                mux_tout = 4;;
-                Nro_Disp = 4;
-            }
-        }
-        break;
-        case 4:{
-            if(!mux_tout){
-                Send_Disp(4,Uni);
-                mux_tout = 4;;
-                Nro_Disp = 1;
-            }
-        }
-        break;
-        default :{
-            mux_tout = 4;;
-            Nro_Disp = 1;
-        }
-    }
-}
-void tic_timer0(void){
-    if(mux_tout)mux_tout--;
-    if(bot_tout)bot_tout--;
-    if(led_tout)led_tout--;
+# 31 "./FW_Timer.h" 2
+# 53 "./FW_Timer.h"
+void Tmr_Init(void);
+# 14 "FW_Timer.c" 2
+# 61 "FW_Timer.c"
+void Tmr_Init(){
+    T0CONbits.TMR0ON = 0;
+    T0CONbits.T08BIT = 1;
+    T0CONbits.T0CS = 0;
+    T0CONbits.PSA = 0;
+    T0CONbits.T0PS0 = 1;
+    T0CONbits.T0PS1 = 1;
+    T0CONbits.T0PS2 = 1;
+    TMR0L = 209;
+    TMR0H = 0xFF;
+    INTCONbits.TMR0IE = 1;
 }

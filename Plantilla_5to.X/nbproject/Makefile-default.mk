@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=lemos.c main.c FW_InitKit.c
+SOURCEFILES_QUOTED_IF_SPACED=lemos.c main.c FW_InitKit.c FW_Timer.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lemos.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/FW_InitKit.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/lemos.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/FW_InitKit.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/lemos.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/FW_InitKit.p1 ${OBJECTDIR}/FW_Timer.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/lemos.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/FW_InitKit.p1.d ${OBJECTDIR}/FW_Timer.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/lemos.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/FW_InitKit.p1
+OBJECTFILES=${OBJECTDIR}/lemos.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/FW_InitKit.p1 ${OBJECTDIR}/FW_Timer.p1
 
 # Source Files
-SOURCEFILES=lemos.c main.c FW_InitKit.c
+SOURCEFILES=lemos.c main.c FW_InitKit.c FW_Timer.c
 
 
 CFLAGS=
@@ -117,6 +117,14 @@ ${OBJECTDIR}/FW_InitKit.p1: FW_InitKit.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/FW_InitKit.d ${OBJECTDIR}/FW_InitKit.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/FW_InitKit.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/FW_Timer.p1: FW_Timer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/FW_Timer.p1.d 
+	@${RM} ${OBJECTDIR}/FW_Timer.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -fno-short-double -fno-short-float -memi=wordwrite -mrom=default,-0-1fff,-2006-2007,-2016-2017 -fasmfile -maddrqual=ignore -xassembler-with-cpp -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file -mcodeoffset=0x2000  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/FW_Timer.p1 FW_Timer.c 
+	@-${MV} ${OBJECTDIR}/FW_Timer.d ${OBJECTDIR}/FW_Timer.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/FW_Timer.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 else
 ${OBJECTDIR}/lemos.p1: lemos.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -141,6 +149,14 @@ ${OBJECTDIR}/FW_InitKit.p1: FW_InitKit.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -fno-short-double -fno-short-float -memi=wordwrite -mrom=default,-0-1fff,-2006-2007,-2016-2017 -fasmfile -maddrqual=ignore -xassembler-with-cpp -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file -mcodeoffset=0x2000  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/FW_InitKit.p1 FW_InitKit.c 
 	@-${MV} ${OBJECTDIR}/FW_InitKit.d ${OBJECTDIR}/FW_InitKit.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/FW_InitKit.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/FW_Timer.p1: FW_Timer.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/FW_Timer.p1.d 
+	@${RM} ${OBJECTDIR}/FW_Timer.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -fno-short-double -fno-short-float -memi=wordwrite -mrom=default,-0-1fff,-2006-2007,-2016-2017 -fasmfile -maddrqual=ignore -xassembler-with-cpp -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file -mcodeoffset=0x2000  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/FW_Timer.p1 FW_Timer.c 
+	@-${MV} ${OBJECTDIR}/FW_Timer.d ${OBJECTDIR}/FW_Timer.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/FW_Timer.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 

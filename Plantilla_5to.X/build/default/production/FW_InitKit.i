@@ -5626,17 +5626,10 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 2 3
 # 14 "FW_InitKit.c" 2
 # 1 "./FW_InitKit.h" 1
-# 83 "./FW_InitKit.h"
+# 66 "./FW_InitKit.h"
 void Kit_Init(void);
-
-
-
-
-
-
-void timer_ini13(void);
 # 15 "FW_InitKit.c" 2
-# 59 "FW_InitKit.c"
+# 63 "FW_InitKit.c"
 void Kit_Init(void){
 
 
@@ -5663,17 +5656,4 @@ void Kit_Init(void){
 
     TRISB = 0xFF;
 
-}
-# 96 "FW_InitKit.c"
-void timer_ini13(){
-    T0CONbits.TMR0ON = 0;
-    T0CONbits.T08BIT = 1;
-    T0CONbits.T0CS = 0;
-    T0CONbits.PSA = 0;
-    T0CONbits.T0PS0 = 1;
-    T0CONbits.T0PS1 = 1;
-    T0CONbits.T0PS2 = 1;
-    TMR0L = 209;
-    TMR0H = 0xFF;
-    INTCONbits.TMR0IE = 1;
 }
