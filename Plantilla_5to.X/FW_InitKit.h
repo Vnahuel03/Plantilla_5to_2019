@@ -43,9 +43,9 @@ extern "C" {
 
 #define DISP1   LATAbits.LA4
 #define DISP2   LATAbits.LA5
-#define DISP3   LATEbits.LATE0
-#define DISP4   LATEbits.LATE1
-#define DOT     LATEbits.LATE2
+#define DISP3   LATEbits.LE0
+#define DISP4   LATEbits.LE1
+#define DOT     LATEbits.LE2
 
 
 /****************************************************************************************************

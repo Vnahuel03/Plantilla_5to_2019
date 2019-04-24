@@ -1,7 +1,7 @@
 /****************************************************************************************************
  *
  * \file		FW_Timer.c
- * \brief		Contiene el prototipo de inicialización de los Timers
+ * \brief		Contiene el prototipo de inicializacion de los Timers
  * \date		22 de abri de 2019
  * \author		Nicolas Ferragamo nferragamo@est.frba.utn.edu.ar
  * \version     1.0.0
@@ -50,9 +50,9 @@
 
 /**
  *	\fn         Tmr0_Init
- *	\brief      Inicialización del Tmr0
+ *	\brief      Inicializacion del Tmr0
  *  \details    Inicializa el timer 0 en 8 bits, con el prescaler en 256 y con 
- *              la interrupción activada. Esta configurado para que interrumpa
+ *              la interrupcion activada. Esta configurado para que interrumpa
  *              cada 1.0022ms
  *  \author I   Esteban Lemos
  *	\date  

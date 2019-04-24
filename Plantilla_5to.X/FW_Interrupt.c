@@ -1,7 +1,7 @@
 /****************************************************************************************************
  *
  * \file		FW_Interrupt.c
- * \brief		Contiene la función de interrupción
+ * \brief		Contiene la función de interrupcion
  * \date		23 de abril de 2019
  * \author		Nicolas Ferragamo nferragamo@est.frba.utn.edu.ar
  * \version     1.0.0
@@ -59,7 +59,7 @@
 ****************************************************************************************************/
 /**
 	\fn         __interrupt() myISR
-	\brief      Función de interrupción
+	\brief      Función de interrupcion
  	\author     Nicolás Ferragamo
  	\date       23 de abril de 2019
  	\param      [in] void

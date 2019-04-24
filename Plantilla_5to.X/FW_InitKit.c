@@ -1,6 +1,6 @@
 /****************************************************************************************************
  * \file:       FW_InitKit
- * \brief:      Archivo con las funciones de inicialización del PIC18F4550
+ * \brief:      Archivo con las funciones de inicializacion del PIC18F4550
  * \author:     Nicolás Ferragamo ferragamo.nico@est.frbautn.edu.ar
  * \date:       22 de abril de 2019
  * \version:    1.0

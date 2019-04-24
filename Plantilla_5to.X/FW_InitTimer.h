@@ -1,7 +1,7 @@
 /****************************************************************************************************
  *
  * \file		FW_Timer.h
- * \brief		Contiene el prototipo de inicialización de los Timers
+ * \brief		Contiene el prototipo de inicializacion de los Timers
  * \date		22 de abri de 2019
  * \author		Nicolas Ferragamo nferragamo@est.frba.utn.edu.ar
  * \version     1.0.0

@@ -17,6 +17,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="Aplicacion" displayName="Aplicacion" projectFiles="true">
+      </logicalFolder>
       <logicalFolder name="Firmware_Driver"
                      displayName="Firmware_Driver"
                      projectFiles="true">
@@ -27,6 +29,8 @@
                      projectFiles="true">
         <itemPath>FW_InitKit.c</itemPath>
         <itemPath>FW_InitTimer.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Primitivas" displayName="Primitivas" projectFiles="true">
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
