@@ -557,52 +557,52 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8893
 [; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"63 FW_InitKit.c
-[; ;FW_InitKit.c: 63: void Kit_Init(void){
+"64 FW_InitKit.c
+[; ;FW_InitKit.c: 64: void Kit_Init(void){
 [v _Kit_Init `(v ~T0 @X0 1 ef ]
 {
 [e :U _Kit_Init ]
 [f ]
-"66
-[; ;FW_InitKit.c: 66:     LATA = 0x00;
-[e = _LATA -> -> 0 `i `uc ]
 "67
-[; ;FW_InitKit.c: 67:     LATB = 0x00;
-[e = _LATB -> -> 0 `i `uc ]
+[; ;FW_InitKit.c: 67:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
 "68
-[; ;FW_InitKit.c: 68:     LATC = 0x00;
-[e = _LATC -> -> 0 `i `uc ]
+[; ;FW_InitKit.c: 68:     LATB = 0x00;
+[e = _LATB -> -> 0 `i `uc ]
 "69
-[; ;FW_InitKit.c: 69:     LATD = 0x00;
-[e = _LATD -> -> 0 `i `uc ]
+[; ;FW_InitKit.c: 69:     LATC = 0x00;
+[e = _LATC -> -> 0 `i `uc ]
 "70
-[; ;FW_InitKit.c: 70:     LATE = 0x00;
+[; ;FW_InitKit.c: 70:     LATD = 0x00;
+[e = _LATD -> -> 0 `i `uc ]
+"71
+[; ;FW_InitKit.c: 71:     LATE = 0x00;
 [e = _LATE -> -> 0 `i `uc ]
-"74
-[; ;FW_InitKit.c: 74:     TRISD = 0xF0;
-[e = _TRISD -> -> 240 `i `uc ]
 "75
-[; ;FW_InitKit.c: 75:     TRISCbits.RC6 = 0;
-[e = . . _TRISCbits 1 4 -> -> 0 `i `uc ]
+[; ;FW_InitKit.c: 75:     TRISD = 0xF0;
+[e = _TRISD -> -> 240 `i `uc ]
 "76
-[; ;FW_InitKit.c: 76:     TRISCbits.RC7 = 0;
+[; ;FW_InitKit.c: 76:     TRISCbits.RC6 = 0;
+[e = . . _TRISCbits 1 4 -> -> 0 `i `uc ]
+"77
+[; ;FW_InitKit.c: 77:     TRISCbits.RC7 = 0;
 [e = . . _TRISCbits 1 5 -> -> 0 `i `uc ]
-"80
-[; ;FW_InitKit.c: 80:     CMCON = 0x07;
-[e = _CMCON -> -> 7 `i `uc ]
 "81
-[; ;FW_InitKit.c: 81:     ADCON1 = 0x0F;
-[e = _ADCON1 -> -> 15 `i `uc ]
+[; ;FW_InitKit.c: 81:     CMCON = 0x07;
+[e = _CMCON -> -> 7 `i `uc ]
 "82
-[; ;FW_InitKit.c: 82:     TRISA = 0xC0;
-[e = _TRISA -> -> 192 `i `uc ]
+[; ;FW_InitKit.c: 82:     ADCON1 = 0x0F;
+[e = _ADCON1 -> -> 15 `i `uc ]
 "83
-[; ;FW_InitKit.c: 83:     TRISE = 0x00;
+[; ;FW_InitKit.c: 83:     TRISA = 0xC0;
+[e = _TRISA -> -> 192 `i `uc ]
+"84
+[; ;FW_InitKit.c: 84:     TRISE = 0x00;
 [e = _TRISE -> -> 0 `i `uc ]
-"87
-[; ;FW_InitKit.c: 87:     TRISB = 0xFF;
+"88
+[; ;FW_InitKit.c: 88:     TRISB = 0xFF;
 [e = _TRISB -> -> 255 `i `uc ]
-"89
-[; ;FW_InitKit.c: 89: }
+"90
+[; ;FW_InitKit.c: 90: }
 [e :UE 367 ]
 }

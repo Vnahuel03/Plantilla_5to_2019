@@ -1,5 +1,44 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
+"8075 /opt/microchip/xc8/v2.05/pic/include/pic18f4550.h
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8075:     struct {
+[s S347 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S347 . T0PS PSA T0SE T0CS T08BIT TMR0ON ]
+"8083
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8083:     struct {
+[s S348 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S348 . T0PS0 T0PS1 T0PS2 ]
+"8074
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8074: typedef union {
+[u S346 `S347 1 `S348 1 ]
+[n S346 . . . ]
+"8089
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8089: extern volatile T0CONbits_t T0CONbits __attribute__((address(0xFD5)));
+[v _T0CONbits `VS346 ~T0 @X0 0 e@4053 ]
+"8146
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8146: extern volatile unsigned char TMR0L __attribute__((address(0xFD6)));
+[v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
+"8153
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8153: extern volatile unsigned char TMR0H __attribute__((address(0xFD7)));
+[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
+"8588
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8588:     struct {
+[s S360 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S360 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"8598
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8598:     struct {
+[s S361 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S361 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"8608
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8608:     struct {
+[s S362 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S362 . . GIEL GIEH ]
+"8587
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8587: typedef union {
+[u S359 `S360 1 `S361 1 `S362 1 ]
+[n S359 . . . . ]
+"8614
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8614: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
+[v _INTCONbits `VS359 ~T0 @X0 0 e@4082 ]
 "54 /opt/microchip/xc8/v2.05/pic/include/pic18f4550.h
 [; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -510,84 +549,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8893
 [; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"28 ./confbits.h
-[p x PLLDIV   = 5 ]
-"29
-[p x CPUDIV   = OSC1_PLL2 ]
-"30
-[p x USBDIV   = 2 ]
-"31
-[p x FOSC     = HSPLL_HS ]
-"32
-[p x FCMEN    = OFF ]
-"33
-[p x IESO     = OFF ]
-"34
-[p x PWRT     = OFF ]
-"35
-[p x BOR      = ON ]
-"36
-[p x BORV     = 3 ]
-"37
-[p x VREGEN   = ON ]
-"38
-[p x WDT      = OFF ]
-"39
-[p x WDTPS    = 32768 ]
-"40
-[p x MCLRE    = ON ]
-"41
-[p x LPT1OSC  = OFF ]
-"42
-[p x PBADEN   = OFF ]
-"50
-[p x STVREN   = ON ]
-"51
-[p x LVP      = OFF ]
-"53
-[p x XINST    = OFF ]
-"54
-[p x CP0      = OFF ]
-"55
-[p x CP1      = OFF ]
-"58
-[p x CPB      = OFF ]
-"60
-[p x WRT0     = OFF ]
-"61
-[p x WRT1     = OFF ]
-"64
-[p x WRTB     = OFF ]
-"65
-[p x WRTC     = OFF ]
-"67
-[p x EBTR0    = OFF ]
-"68
-[p x EBTR1    = OFF ]
-"71
-[p x EBTRB    = OFF ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"58 main.c
-[; ;main.c: 58: void main (void)
-[v _main `(v ~T0 @X0 1 ef ]
-"59
-[; ;main.c: 59: {
+"63 FW_InitTimer.c
+[; ;FW_InitTimer.c: 63: void Tmr0_Init(){
+[v _Tmr0_Init `(v ~T0 @X0 1 ef ]
 {
-[e :U _main ]
+[e :U _Tmr0_Init ]
 [f ]
-"61
-[; ;main.c: 61:     while (1)
-[e :U 369 ]
-"62
-[; ;main.c: 62:     {
-{
 "64
-[; ;main.c: 64:     }
-}
-[e :U 368 ]
-[e $U 369  ]
-[e :U 370 ]
+[; ;FW_InitTimer.c: 64:     T0CONbits.TMR0ON = 0;
+[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
 "65
-[; ;main.c: 65: }
+[; ;FW_InitTimer.c: 65:     T0CONbits.T08BIT = 1;
+[e = . . _T0CONbits 0 4 -> -> 1 `i `uc ]
+"66
+[; ;FW_InitTimer.c: 66:     T0CONbits.T0CS = 0;
+[e = . . _T0CONbits 0 3 -> -> 0 `i `uc ]
+"67
+[; ;FW_InitTimer.c: 67:     T0CONbits.PSA = 0;
+[e = . . _T0CONbits 0 1 -> -> 0 `i `uc ]
+"68
+[; ;FW_InitTimer.c: 68:     T0CONbits.T0PS0 = 1;
+[e = . . _T0CONbits 1 0 -> -> 1 `i `uc ]
+"69
+[; ;FW_InitTimer.c: 69:     T0CONbits.T0PS1 = 1;
+[e = . . _T0CONbits 1 1 -> -> 1 `i `uc ]
+"70
+[; ;FW_InitTimer.c: 70:     T0CONbits.T0PS2 = 1;
+[e = . . _T0CONbits 1 2 -> -> 1 `i `uc ]
+"71
+[; ;FW_InitTimer.c: 71:     TMR0L = 209;
+[e = _TMR0L -> -> 209 `i `uc ]
+"72
+[; ;FW_InitTimer.c: 72:     TMR0H = 0xFF;
+[e = _TMR0H -> -> 255 `i `uc ]
+"73
+[; ;FW_InitTimer.c: 73:     INTCONbits.TMR0IE = 1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"74
+[; ;FW_InitTimer.c: 74: }
 [e :UE 367 ]
 }

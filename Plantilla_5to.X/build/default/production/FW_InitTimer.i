@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "FW_InitTimer.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "/opt/microchip/xc8/v2.05/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 12 "main.c"
+# 1 "FW_InitTimer.c" 2
+# 13 "FW_InitTimer.c"
+# 1 "./FW_InitTimer.h" 1
+# 30 "./FW_InitTimer.h"
 # 1 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 1 3
 # 18 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -5624,60 +5626,20 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 2 3
-# 13 "main.c" 2
-# 1 "./confbits.h" 1
-# 28 "./confbits.h"
-#pragma config PLLDIV = 5
-#pragma config CPUDIV = OSC1_PLL2
-#pragma config USBDIV = 2
-#pragma config FOSC = HSPLL_HS
-#pragma config FCMEN = OFF
-#pragma config IESO = OFF
-#pragma config PWRT = OFF
-#pragma config BOR = ON
-#pragma config BORV = 3
-#pragma config VREGEN = ON
-#pragma config WDT = OFF
-#pragma config WDTPS = 32768
-#pragma config MCLRE = ON
-#pragma config LPT1OSC = OFF
-#pragma config PBADEN = OFF
-
-
-
-
-
-
-
-#pragma config STVREN = ON
-#pragma config LVP = OFF
-
-#pragma config XINST = OFF
-#pragma config CP0 = OFF
-#pragma config CP1 = OFF
-
-
-#pragma config CPB = OFF
-
-#pragma config WRT0 = OFF
-#pragma config WRT1 = OFF
-
-
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-
-#pragma config EBTR0 = OFF
-#pragma config EBTR1 = OFF
-
-
-#pragma config EBTRB = OFF
-# 14 "main.c" 2
-# 58 "main.c"
-void main (void)
-{
-
-    while (1)
-    {
-
-    }
+# 31 "./FW_InitTimer.h" 2
+# 53 "./FW_InitTimer.h"
+void Tmr0_Init(void);
+# 14 "FW_InitTimer.c" 2
+# 63 "FW_InitTimer.c"
+void Tmr0_Init(){
+    T0CONbits.TMR0ON = 0;
+    T0CONbits.T08BIT = 1;
+    T0CONbits.T0CS = 0;
+    T0CONbits.PSA = 0;
+    T0CONbits.T0PS0 = 1;
+    T0CONbits.T0PS1 = 1;
+    T0CONbits.T0PS2 = 1;
+    TMR0L = 209;
+    TMR0H = 0xFF;
+    INTCONbits.TMR0IE = 1;
 }

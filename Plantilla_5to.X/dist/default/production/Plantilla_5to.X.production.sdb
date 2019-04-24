@@ -27,100 +27,25 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 /opt/microchip/xc8/v2.05/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"91 /home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/lemos.c
-[v _Send_Disp Send_Disp `(v  1 e 1 0 ]
+"70 /home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/FW_Interrupt.c
+[v _myISR myISR `IIH(v  1 e 1 0 ]
 "58 /home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
 [v _main main `(v  1 e 1 0 ]
-"67
-[v _myISR myISR `IIH(v  1 e 1 0 ]
-"72 /home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/lemos.h
-[v _mux_tout mux_tout `uc  1 e 1 0 ]
-[v _bot_tout bot_tout `uc  1 e 1 0 ]
-"73
-[v _led_tout led_tout `ui  1 e 2 0 ]
 "2973 /opt/microchip/xc8/v2.05/pic/include/pic18f4550.h
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
-[s S97 . 1 `uc 1 LATA0 1 0 :1:0 
-`uc 1 LATA1 1 0 :1:1 
-`uc 1 LATA2 1 0 :1:2 
-`uc 1 LATA3 1 0 :1:3 
-`uc 1 LATA4 1 0 :1:4 
-`uc 1 LATA5 1 0 :1:5 
-`uc 1 LATA6 1 0 :1:6 
-]
-"2998
-[s S105 . 1 `uc 1 LA0 1 0 :1:0 
-`uc 1 LA1 1 0 :1:1 
-`uc 1 LA2 1 0 :1:2 
-`uc 1 LA3 1 0 :1:3 
-`uc 1 LA4 1 0 :1:4 
-`uc 1 LA5 1 0 :1:5 
-`uc 1 LA6 1 0 :1:6 
-]
-[u S113 . 1 `S97 1 . 1 0 `S105 1 . 1 0 ]
-[v _LATAbits LATAbits `VES113  1 e 1 @3977 ]
 "3073
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "3185
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S64 . 1 `uc 1 LATC0 1 0 :1:0 
-`uc 1 LATC1 1 0 :1:1 
-`uc 1 LATC2 1 0 :1:2 
-`uc 1 . 1 0 :3:3 
-`uc 1 LATC6 1 0 :1:6 
-`uc 1 LATC7 1 0 :1:7 
-]
-"3208
-[s S71 . 1 `uc 1 LC0 1 0 :1:0 
-`uc 1 LC1 1 0 :1:1 
-`uc 1 LC2 1 0 :1:2 
-`uc 1 . 1 0 :3:3 
-`uc 1 LC6 1 0 :1:6 
-`uc 1 LC7 1 0 :1:7 
-]
-[u S78 . 1 `S64 1 . 1 0 `S71 1 . 1 0 ]
-[v _LATCbits LATCbits `VES78  1 e 1 @3979 ]
 "3263
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-[s S24 . 1 `uc 1 LATD0 1 0 :1:0 
-`uc 1 LATD1 1 0 :1:1 
-`uc 1 LATD2 1 0 :1:2 
-`uc 1 LATD3 1 0 :1:3 
-`uc 1 LATD4 1 0 :1:4 
-`uc 1 LATD5 1 0 :1:5 
-`uc 1 LATD6 1 0 :1:6 
-`uc 1 LATD7 1 0 :1:7 
-]
-"3290
-[s S33 . 1 `uc 1 LD0 1 0 :1:0 
-`uc 1 LD1 1 0 :1:1 
-`uc 1 LD2 1 0 :1:2 
-`uc 1 LD3 1 0 :1:3 
-`uc 1 LD4 1 0 :1:4 
-`uc 1 LD5 1 0 :1:5 
-`uc 1 LD6 1 0 :1:6 
-`uc 1 LD7 1 0 :1:7 
-]
-[u S42 . 1 `S24 1 . 1 0 `S33 1 . 1 0 ]
-[v _LATDbits LATDbits `VES42  1 e 1 @3980 ]
 "3375
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
-[s S133 . 1 `uc 1 LATE0 1 0 :1:0 
-`uc 1 LATE1 1 0 :1:1 
-`uc 1 LATE2 1 0 :1:2 
-]
-"3392
-[s S137 . 1 `uc 1 LE0 1 0 :1:0 
-`uc 1 LE1 1 0 :1:1 
-`uc 1 LE2 1 0 :1:2 
-]
-[u S141 . 1 `S133 1 . 1 0 `S137 1 . 1 0 ]
-[v _LATEbits LATEbits `VES141  1 e 1 @3981 ]
 "3427
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "3625
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-[s S211 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S41 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
@@ -128,15 +53,15 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "3875
-[s S218 . 1 `uc 1 RC0 1 0 :1:0 
+[s S48 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-[u S225 . 1 `S211 1 . 1 0 `S218 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES225  1 e 1 @3988 ]
+[u S55 . 1 `S41 1 . 1 0 `S48 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES55  1 e 1 @3988 ]
 "4001
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "4223
@@ -145,7 +70,7 @@
 [v _CMCON CMCON `VEuc  1 e 1 @4020 ]
 "6581
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
-[s S255 . 1 `uc 1 T0PS 1 0 :3:0 
+[s S85 . 1 `uc 1 T0PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -153,17 +78,17 @@
 `uc 1 TMR0ON 1 0 :1:7 
 ]
 "8089
-[s S262 . 1 `uc 1 T0PS0 1 0 :1:0 
+[s S92 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
 ]
-[u S266 . 1 `S255 1 . 1 0 `S262 1 . 1 0 ]
-[v _T0CONbits T0CONbits `VES266  1 e 1 @4053 ]
+[u S96 . 1 `S85 1 . 1 0 `S92 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES96  1 e 1 @4053 ]
 "8146
 [v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
 "8153
 [v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
-[s S283 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S113 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -173,7 +98,7 @@
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "8614
-[s S292 . 1 `uc 1 . 1 0 :1:0 
+[s S122 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -182,12 +107,12 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S301 . 1 `uc 1 . 1 0 :6:0 
+[s S131 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S305 . 1 `S283 1 . 1 0 `S292 1 . 1 0 `S301 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES305  1 e 1 @4082 ]
+[u S135 . 1 `S113 1 . 1 0 `S122 1 . 1 0 `S131 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES135  1 e 1 @4082 ]
 "10815
 [v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
 "58 /home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/main.c
@@ -195,8 +120,8 @@
 {
 "65
 } 0
-"67
+"70 /home/nico/Documentos/EEST1/AED_5/git/Plantilla_5to_2019/Plantilla_5to.X/FW_Interrupt.c
 [v _myISR myISR `IIH(v  1 e 1 0 ]
 {
-"76
+"79
 } 0

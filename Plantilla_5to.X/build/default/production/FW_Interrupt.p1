@@ -1,5 +1,9 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
+[t ~ __interrupt . k ]
+[t T36 __interrupt ]
+"10815 /opt/microchip/xc8/v2.05/pic/include/pic18f4550.h
+[; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 10815: extern volatile __bit TMR0IF __attribute__((address(0x7F92)));
+[v _TMR0IF `Vb ~T0 @X0 0 e@32658 ]
 "54 /opt/microchip/xc8/v2.05/pic/include/pic18f4550.h
 [; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -510,84 +514,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8893
 [; ;/opt/microchip/xc8/v2.05/pic/include/pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"28 ./confbits.h
-[p x PLLDIV   = 5 ]
-"29
-[p x CPUDIV   = OSC1_PLL2 ]
-"30
-[p x USBDIV   = 2 ]
-"31
-[p x FOSC     = HSPLL_HS ]
-"32
-[p x FCMEN    = OFF ]
-"33
-[p x IESO     = OFF ]
-"34
-[p x PWRT     = OFF ]
-"35
-[p x BOR      = ON ]
-"36
-[p x BORV     = 3 ]
-"37
-[p x VREGEN   = ON ]
-"38
-[p x WDT      = OFF ]
-"39
-[p x WDTPS    = 32768 ]
-"40
-[p x MCLRE    = ON ]
-"41
-[p x LPT1OSC  = OFF ]
-"42
-[p x PBADEN   = OFF ]
-"50
-[p x STVREN   = ON ]
-"51
-[p x LVP      = OFF ]
-"53
-[p x XINST    = OFF ]
-"54
-[p x CP0      = OFF ]
-"55
-[p x CP1      = OFF ]
-"58
-[p x CPB      = OFF ]
-"60
-[p x WRT0     = OFF ]
-"61
-[p x WRT1     = OFF ]
-"64
-[p x WRTB     = OFF ]
-"65
-[p x WRTC     = OFF ]
-"67
-[p x EBTR0    = OFF ]
-"68
-[p x EBTR1    = OFF ]
-"71
-[p x EBTRB    = OFF ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"58 main.c
-[; ;main.c: 58: void main (void)
-[v _main `(v ~T0 @X0 1 ef ]
-"59
-[; ;main.c: 59: {
+[v $root$_myISR `(v ~T0 @X0 0 e ]
+"70 FW_Interrupt.c
+[; ;FW_Interrupt.c: 70: void __attribute__((picinterrupt(("")))) myISR(void){
+[v _myISR `(v ~T36 @X0 1 ef ]
 {
-[e :U _main ]
+[e :U _myISR ]
 [f ]
-"61
-[; ;main.c: 61:     while (1)
-[e :U 369 ]
-"62
-[; ;main.c: 62:     {
+"75
+[; ;FW_Interrupt.c: 75:     if(TMR0IF){
+[e $ ! _TMR0IF 368  ]
 {
-"64
-[; ;main.c: 64:     }
+"76
+[; ;FW_Interrupt.c: 76:         TMR0IF=0;
+[e = _TMR0IF -> -> 0 `i `b ]
+"78
+[; ;FW_Interrupt.c: 78:     }
 }
 [e :U 368 ]
-[e $U 369  ]
-[e :U 370 ]
-"65
-[; ;main.c: 65: }
+"79
+[; ;FW_Interrupt.c: 79: }
 [e :UE 367 ]
 }
