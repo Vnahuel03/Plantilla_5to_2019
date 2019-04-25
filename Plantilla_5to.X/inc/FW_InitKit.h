@@ -29,9 +29,9 @@ extern "C" {
 /****************************************************************************************************
  *** DEFINES GLOBALES
 ****************************************************************************************************/
-#define LED5    LATDbits.LD0 
-#define LED6    LATDbits.LD1
-#define LED1    LATDbits.LD2
+#define LED5    LATDbits.LD0    //!< Indica ingreso a modo BootLoader, puede ser usado por el usuario
+#define LED6    LATDbits.LD1    //!< Inica modo conectado, puede ser usado por el usuario
+#define LED1    LATDbits.LD2    
 #define LED2    LATDbits.LD3
 #define LED3    LATCbits.LC6
 #define LED4    LATCbits.LC7
