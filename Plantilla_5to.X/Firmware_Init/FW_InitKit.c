@@ -3,7 +3,7 @@
  * \brief:      Archivo con las funciones de inicializacion del PIC18F4550
  * \author:     Nicolás Ferragamo ferragamo.nico@est.frbautn.edu.ar
  * \date:       22 de abril de 2019
- * \version:    1.0
+ * \version:    1.0.0
  ****************************************************************************************************/
  
 /****************************************************************************************************
@@ -72,20 +72,20 @@ void Kit_Init(void){
 
     //LEDS y pulsadores
 
-    TRISD = 0xF0;       //RD0 a RD3 salidas RD4 a RD7 entradas
-    TRISCbits.RC6 = 0;  //RC6 y RC7 salidas
+    TRISD         = 0xF0;   // RD0 a RD3 salidas RD4 a RD7 entradas
+    TRISCbits.RC6 = 0;      // RC6 y RC7 salidas
     TRISCbits.RC7 = 0;
 
     //Display
 
-    CMCON = 0x07;       //comparadores de entrada deshabilitados
-    ADCON1 = 0x0F;      //Conversores AD deshabilitados
-    TRISA = 0xC0;       //RA1 a RA5 salidas
-    TRISE = 0x00;       //RE0 a RE2 salidas el resto no está implementado
+    CMCON  = 0x07;          // comparadores de entrada deshabilitados
+    ADCON1 = 0x0F;          // Conversores AD deshabilitados
+    TRISA  = 0xC0;          // RA1 a RA5 salidas
+    TRISE  = 0x00;          // RE0 a RE2 salidas el resto no está implementado
 
     //Puerto B
 
-    TRISB = 0xFF;       //todas entradas, de ser necesario será configuradas por
-                        //el alumno según el mismo necesite
+    TRISB  = 0xFF;          // todas entradas, de ser necesario será configuradas por
+                            // el alumno según el mismo necesite
 }
 

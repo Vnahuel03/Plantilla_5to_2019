@@ -67,12 +67,15 @@
 	\return     void
 */
 
-void __interrupt() myISR(void){
+void __interrupt() myISR(void)
+{
     /*Aquí se ejecuta el código de las interrupciones que hayan sucedido,
      *por defecto el XC8 entra siempre en esta interrupción denominada de
      *Alta prioridad
      */
-    if(TMR0IF){         //la interrupcion ocurre cada 1 segundo.
+    
+    if(TMR0IF)
+    {         //la interrupcion ocurre cada 1 segundo.
         TMR0IF=0;       //se reinicia el timer y su interrupcion.
         //Su codigo por favor!!   
     }

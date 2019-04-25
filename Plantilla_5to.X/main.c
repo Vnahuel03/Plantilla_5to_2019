@@ -10,7 +10,9 @@
  *** INCLUDES
 ****************************************************************************************************/
 #include <xc.h>
-#include "confbits.h"   //no se debe de modificar este archivo para
+#include "confbits.h"
+#include "FW_InitKit.h"
+#include "FW_InitTimer.h"   //no se debe de modificar este archivo para
                         //garantizar el funcionamiento del BOOTLOADER
 /****************************************************************************************************
  *** DEFINES PRIVADOS AL MODULO
@@ -57,7 +59,10 @@
 
 void main (void) 
 {
-
+    Kit_Init();     // Inicializa los puertos
+    Tmr0_Init();    // Inicializa el timer 0
+    ei();           // Habilita las interrupciones globales
+    
     while (1)
     {   
     

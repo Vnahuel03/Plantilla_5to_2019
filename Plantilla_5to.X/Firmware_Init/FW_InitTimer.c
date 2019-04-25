@@ -60,15 +60,16 @@
  *  \param      [out] void
  *	\return           void
 */
-void Tmr0_Init(){
-    T0CONbits.TMR0ON = 0;   //apago el timer
-    T0CONbits.T08BIT = 1;   //selecciono el timer en 8 bits
-    T0CONbits.T0CS = 0;     //el timer cuenta fosc/4
-    T0CONbits.PSA = 0;      //habilito el preescaler
-    T0CONbits.T0PS0 = 1;    //cargo el preescaler con 256
-    T0CONbits.T0PS1 = 1;
-    T0CONbits.T0PS2 = 1;
-    TMR0L = 209;           //el timer contará 47 fosc/4 * 256 = 12032 * 0,0833us
-    TMR0H = 0xFF;           //en total aprox 1.0022ms  casi 1ms
-    INTCONbits.TMR0IE = 1;  //Habilita la interrupción de timer 0
+void Tmr0_Init()
+{
+    T0CONbits.TMR0ON  = 0;      /* apago el timer */
+    T0CONbits.T08BIT  = 1;      /* selecciono el timer en 8 bits */
+    T0CONbits.T0CS    = 0;      /* el timer cuenta fosc/4 */
+    T0CONbits.PSA     = 0;      /* habilito el preescaler */
+    T0CONbits.T0PS0   = 1;      /* cargo el preescaler con 256 */ 
+    T0CONbits.T0PS1   = 1;
+    T0CONbits.T0PS2   = 1;
+    TMR0L             = 209;    /* el timer contará 47 fosc/4 * 256 = 12032 * 0,0833us */
+    TMR0H             = 0xFF;   /* en total aprox 1.0022ms  casi 1ms */
+    INTCONbits.TMR0IE = 1;      /* Habilita la interrupción de timer 0 */
 }
