@@ -2,18 +2,16 @@
  * \file:       main.c
  * \brief:      Plantilla de 5to para AED 
  * \author:     Nicolás Ferragamo ferragamo.nico@est.frbautn.edu.ar
- * \date:       21 de abril de 2019
- * \version:    1.0.0
+ * \date:       24 de junio de 2019
+ * \version:    1.1.0
  ****************************************************************************************************/
  
 /****************************************************************************************************
  *** INCLUDES
 ****************************************************************************************************/
-#include <xc.h>
-#include "confbits.h"
-#include "FW_InitKit.h"
-#include "FW_InitTimer.h"   //no se debe de modificar este archivo para
-                        //garantizar el funcionamiento del BOOTLOADER
+
+#include "Aplicacion.h"
+
 /****************************************************************************************************
  *** DEFINES PRIVADOS AL MODULO
 ****************************************************************************************************/
@@ -59,13 +57,12 @@
 
 void main (void) 
 {
-    Kit_Init();     // Inicializa los puertos
-    Tmr0_Init();    // Inicializa el timer 0
-    ei();           // Habilita las interrupciones globales
-    
+    Kit_Init ();     // Inicializa los puertos
+    Tmr0_Init ();    // Inicializa el timer 0
+    ei ();           // Habilita las interrupciones globales
     while (1)
     {   
-    
+      Aplicacion ();
     }
 }
 

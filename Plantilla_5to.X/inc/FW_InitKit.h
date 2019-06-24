@@ -1,11 +1,11 @@
 /****************************************************************************************************
  *
- * @file		FW_InitKit.h
- * @brief		Este archivo contntiene lo referente a la inicializacion de la 
+ * \file		FW_InitKit.h
+ * \brief		Este archivo contntiene lo referente a la inicializacion de la 
  *              placa
- * @date		22 de abril de 2019
- * @author		Nicolas Ferragamo nferragamo@est.frba.utn.edu.ar
- * @version     1.0.0
+ * \date		24 de junio de 2019
+ * \author		Nicolas Ferragamo nferragamo@est.frba.utn.edu.ar
+ * \version     1.1.0
 ****************************************************************************************************/
 
 /****************************************************************************************************
@@ -29,24 +29,6 @@ extern "C" {
 /****************************************************************************************************
  *** DEFINES GLOBALES
 ****************************************************************************************************/
-#define LED5    LATDbits.LD0    //!< Indica ingreso a modo BootLoader, puede ser usado por el usuario
-#define LED6    LATDbits.LD1    //!< Inica modo conectado, puede ser usado por el usuario
-#define LED1    LATDbits.LD2    
-#define LED2    LATDbits.LD3
-#define LED3    LATCbits.LC6
-#define LED4    LATCbits.LC7
-
-#define BOT1    PORTDbits.RD4
-#define BOT2    PORTDbits.RD5
-#define BOT3    PORTDbits.RD6
-#define BOT4    PORTDbits.RD7
-
-#define DISP1   LATAbits.LA4
-#define DISP2   LATAbits.LA5
-#define DISP3   LATEbits.LE0
-#define DISP4   LATEbits.LE1
-#define DOT     LATEbits.LE2
-
 
 /****************************************************************************************************
  *** MACROS GLOBALES

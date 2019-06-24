@@ -52,7 +52,7 @@
 /**
  *	\fn         void Kit_Init(void)
  *	\brief      Inicializa el entrenador
- *  \details    Inicializa todos los puertos del entrenador peparandolo para usar
+ *  \details    Inicializa todos los puertos del entrenador preparandolo para usar
  *              el display y deshabilitando los comparadores de entrada y los
  *              canales analógicos. También limpia todas las salidas.
  *	\author     Esteban Lemos
@@ -62,7 +62,7 @@
  *	\return           void
 */
 void Kit_Init(void){
-
+    
     //Borrado de todos los puertos
     LATA = 0x00;
     LATB = 0x00;

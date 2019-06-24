@@ -1,6 +1,6 @@
 /****************************************************************************************************
  *
- * \file		confbits.h
+ * \file		Confbits.h
  * \brief		Archivo de configuración del microcontrolador
  * \details     En este archivo se configura entre otras cosas el oscilador.
  * \date		19 de febrero de 2014, 19:01
